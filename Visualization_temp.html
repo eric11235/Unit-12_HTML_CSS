@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--viewport adjusts display to fit device screen size-->
+  <title>Visualization_Temp_HW_Unit12</title>
+  <!-- Latest compiled and minified CSS from MaxCDN bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library from MaxCDN bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript from MaxCDN bootstrap-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid"> <!--class provides a full width container, spanning the entire width of the viewport. This for Navbar-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand2" href="index_hw.html">Latitude</a>
+            </div>        
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Plots <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="Visualization_temp.html">Temperature</a></li>
+                        <li><a href="Visualization_humid.html">Humidity</a></li>
+                        <li><a href="Visualization_cloud.html">Cloudiness</a></li>
+                        <li><a href="Visualization_wind.html">Wind Speed</a></li>
+                    </ul>
+                </li>
+                <li><a href="comparison.html">Comparison</a></li>
+                <li><a href="data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN BODY -->
+
+    <div class="row">
+        <div class="container-fluid"> <!--This container for main body of landing page-->
+            <div class="col-sm-5">
+                <h2>Temperature vs Latitude</h2><hr>
+                <p>
+                <img class="img-responsive" src="Resources/Temp_v_Latitude.png" alt="Temp" style="width:500px; height:400px"><br><br>
+                The program selected a random set of 1500 latitude and longitude measurements, from which we mapped to the city nearest 
+                these coordinates (and then eliminated any repeat cities from the dataset).  As expected, the temperature decreases 
+                as we move away from the equator (latitude moves away from zero eithe positively or negatively).  Finally, you will
+                also notice that the coldest temperatures are seen in the Southern hemisphere.  This is likely due to the tilt of 
+                the Earth placing the Southern hemisphere farther from the sun.
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5">
+                <h2>Visualizations</h2><hr>
+                <br>
+                <p>
+                    <a href="Visualization_temp.html">
+                        <img class="selectable" src="Resources/Temp_v_Latitude.png" alt="Temp" style="width:250px; height:200px; margin: 10px">
+                    </a>
+                    <a href="Visualization_cloud.html">
+                        <img class="selectable" src="Resources/Cloudiness_v_Latitude.png" alt="Temp" style="width:250px; height:200px; margin: 10px">
+                    </a>
+                    <a href="Visualization_humid.html">
+                        <img class="selectable" src="Resources/Humidity_v_Latitude.png" alt="Temp" style="width:250px; height:200px; margin: 10px">
+                    </a>
+                    <a href="Visualization_wind.html">
+                        <img class="selectable" src="Resources/Wind_Speed_v_Latitude.png" alt="Temp" style="width:250px; height:200px; margin: 10px">
+                    </a>
+                </p>
+            </div>
+        </div>  
+    </div>
+
+</body>
+
+</html>

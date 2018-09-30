@@ -1,0 +1,52 @@
+body {
+    background-color: lightgray;
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-default {
+        background-color: teal;
+    }
+}
+
+.navbar-brand2 {
+    font-size: 30px;
+    color:white;
+    margin-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: teal;
+}
+
+img.selectable:hover { 
+    outline: 2px solid green; 
+} 
+
+.col-sm-5, .col-sm-6, .col-sm-9, .col-sm-10 {
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 10px;
+    padding: 20px;
+}
+
+h2, h4 {
+    color: teal;
+    font-weight: bold;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50.0%;
+  padding: 5px;
+  background-color: white;
+  margin-left: 40px;
+  margin-right: 10px;
+}
